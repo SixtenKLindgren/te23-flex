@@ -14,23 +14,25 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-main {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
 .container {
   width: min(100% - 3rem, var(--container-max, 60ch));
   margin-inline: auto;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly ;
+  flex-wrap: wrap;
 }
 
 .region {
   padding-top: 3rem;
   padding-bottom: 3.6rem;
+  display: flex ;
+  justify-content: space-between;
 }
 
 .card {
   background-color: rgba(0, 0, 0, 0.1);
+  min-width: 12rem;
 }
 
 @media (max-width: 600px) {
